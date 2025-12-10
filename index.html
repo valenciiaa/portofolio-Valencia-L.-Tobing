@@ -1,70 +1,377 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Valencia L Tobing - Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valencia L Tobing - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navigation (sama persis) -->
-  <nav id="navbar">
-    <div class="nav-container">
-      <div class="logo"><span class="logo-text">Valencia</span><span class="logo-dot">.</span></div>
-      <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero (foto jadi lebih cantik bulat + glow) -->
-  <section id="home" class="hero">
-    <div class="hero-background">
-      <div class="gradient-orb orb-1"></div>
-      <div class="gradient-orb orb-2"></div>
-      <div class="gradient-orb orb-3"></div>
-    </div>
-
-    <div class="hero-content">
-      <div class="hero-text">
-        <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-name">Valencia L Tobing</h1>
-        <div class="hero-roles">
-          <span class="role-item">IT Student</span><span class="role-divider">|</span>
-          <span class="role-item">Data Analytics</span><span class="role-divider">|</span>
-          <span class="role-item">SQA Professional</span>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">Valencia</span>
+                <span class="logo-dot">.</span>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-        <p class="hero-description">Passionate about turning data into insights and ensuring software quality through meticulous testing and analysis.</p>
-        <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary">View My Work <i class="fas fa-arrow-right"></i></a>
-          <a href="#contact" class="btn btn-secondary">Get In Touch <i class="fas fa-envelope"></i></a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
         </div>
-      </div>
-
-      <!-- Foto profil jadi bulat cantik -->
-      <div class="hero-image">
-        <div class="profile-circle">
-          <img src="images/foto-valen.jpeg" alt="Valencia L Tobing">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Valencia L Tobing</h1>
+                <div class="hero-roles">
+                    <span class="role-item">IT Student</span>
+                    <span class="role-divider">|</span>
+                    <span class="role-item">Data Analytics</span>
+                    <span class="role-divider">|</span>
+                    <span class="role-item">SQA Professional</span>
+                </div>
+                <p class="hero-description">
+                    Passionate about turning data into insights and ensuring software quality through meticulous testing and analysis.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-frame">
+                    <img src="images/foto-valen.jpeg" alt="Valencia L Tobing">
+                    <div class="image-glow"></div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll Down</p>
+        </div>
+    </section>
 
-    <div class="scroll-indicator">
-      <div class="mouse"><div class="wheel"></div></div>
-      <p>Scroll Down</p>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-header">
+            <span class="section-number">01.</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-intro">
+                    I'm a final-year Information Technology student at Del Institute of Technology with a deep passion for <span class="highlight">data analytics</span> and <span class="highlight">software quality assurance</span>.
+                </p>
+                <p>
+                    My journey in tech has equipped me with hands-on experience in web development, testing automation, and data visualization. I thrive in collaborative environments and love solving complex problems with creative solutions.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>3.29</h3>
+                        <p>GPA / 4.00</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5+</h3>
+                        <p>Organizations</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p>Major Projects</p>
+                    </div>
+                </div>
+                <div class="education-box">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-info">
+                        <h4>Del Institute of Technology</h4>
+                        <p>Diploma in Information Technology</p>
+                        <span class="edu-date">Aug 2023 - Sep 2026 (Expected)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Sisanya (About, Projects, Skills, Contact, Footer) 100% sama seperti aslinya -->
-  <!-- Aku cuma rapikan indentasi & urutan aja biar lebih enak dibaca -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-header">
+            <span class="section-number">02.</span>
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-number">01</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Current</span>
+                        <span class="tag">Tugas Akhir</span>
+                    </div>
+                    <h3 class="project-title">Hotel Mutiara Balige Information System</h3>
+                    <p class="project-description">
+                        Developed a comprehensive hotel management system with WhatsApp API integration for automated reservations and service management. Enhanced hotel branding with a modern booking website.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check"></i> WhatsApp API Integration</li>
+                        <li><i class="fas fa-check"></i> Comprehensive System Testing</li>
+                        <li><i class="fas fa-check"></i> Feature Development</li>
+                        <li><i class="fas fa-check"></i> Complete Documentation</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>API</span>
+                        <span>Testing</span>
+                    </div>
+                    <p class="project-date">Aug 2025 - Present</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-number">02</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Completed</span>
+                        <span class="tag">Proyek Akhir 2</span>
+                    </div>
+                    <h3 class="project-title">Desa Ambarita Service Application</h3>
+                    <p class="project-description">
+                        Created a village service application to streamline administrative processes and improve information accessibility for the Ambarita community through web and mobile platforms.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check"></i> Problem Identification & Analysis</li>
+                        <li><i class="fas fa-check"></i> Requirements Analysis</li>
+                        <li><i class="fas fa-check"></i> Web & Mobile Testing</li>
+                        <li><i class="fas fa-check"></i> System Documentation</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>Flutter</span>
+                        <span>PHP</span>
+                        <span>PostgreSQL</span>
+                        <span>Mobile</span>
+                    </div>
+                    <p class="project-date">Jan 2025 - Jun 2025</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-number">03</div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Completed</span>
+                        <span class="tag">Proyek Akhir 1</span>
+                    </div>
+                    <h3 class="project-title">SMK Negeri 2 Balige Information System</h3>
+                    <p class="project-description">
+                        Built an information system to support academic and administrative activities at SMK Negeri 2 Balige with a user-friendly web interface for better information accessibility.
+                    </p>
+                    <ul class="project-highlights">
+                        <li><i class="fas fa-check"></i> System Analysis</li>
+                        <li><i class="fas fa-check"></i> Feature Development</li>
+                        <li><i class="fas fa-check"></i> Documentation</li>
+                        <li><i class="fas fa-check"></i> User Interface Design</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span>HTML/CSS</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                        <span>Web</span>
+                    </div>
+                    <p class="project-date">Jan 2024 - Jun 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="section-header">
+            <span class="section-number">03.</span>
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Programming</h3>
+                <div class="skill-items">
+                    <span class="skill-badge">HTML</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">JavaScript</span>
+                    <span class="skill-badge">PHP</span>
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">C</span>
+                    <span class="skill-badge">SQL</span>
+                    <span class="skill-badge">Dart</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-layer-group"></i>
+                </div>
+                <h3>Frameworks & Tools</h3>
+                <div class="skill-items">
+                    <span class="skill-badge">Laravel</span>
+                    <span class="skill-badge">Node.js</span>
+                    <span class="skill-badge">Flutter</span>
+                    <span class="skill-badge">Git</span>
+                    <span class="skill-badge">VS Code</span>
+                    <span class="skill-badge">Android Studio</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-vial"></i>
+                </div>
+                <h3>Testing & QA</h3>
+                <div class="skill-items">
+                    <span class="skill-badge">Postman</span>
+                    <span class="skill-badge">Cypress</span>
+                    <span class="skill-badge">Katalon Studio</span>
+                    <span class="skill-badge">Selenium</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Database</h3>
+                <div class="skill-items">
+                    <span class="skill-badge">MySQL</span>
+                    <span class="skill-badge">PostgreSQL</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Data Analytics</h3>
+                <div class="skill-items">
+                    <span class="skill-badge">Power BI</span>
+                    <span class="skill-badge">Looker Studio</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Design</h3>
+                <div class="skill-items">
+                    <span class="skill-badge">Figma</span>
+                    <span class="skill-badge">Canva</span>
+                    <span class="skill-badge">Balsamiq</span>
+                </div>
+            </div>
+        </div>
+        <div class="organizations-section">
+            <h3 class="org-title">Organizational Experience</h3>
+            <div class="org-grid">
+                <div class="org-card">
+                    <div class="org-date">Nov 2023 - Present</div>
+                    <h4>Del Robotic Club</h4>
+                    <p>Active Member</p>
+                </div>
+                <div class="org-card">
+                    <div class="org-date">Feb 2025 - Mar 2025</div>
+                    <h4>Del Debate Competition</h4>
+                    <p>Adjudicator</p>
+                </div>
+                <div class="org-card">
+                    <div class="org-date">Mar 2025 - Jul 2025</div>
+                    <h4>Try Out Committee</h4>
+                    <p>Socialization Division</p>
+                </div>
+                <div class="org-card">
+                    <div class="org-date">Sep 2025</div>
+                    <h4>Inauguration Committee</h4>
+                    <p>Escort & Tour Guide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <span class="section-number">04.</span>
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="title-line"></div>
+        </div>
+        <div class="contact-content">
+            <div class="contact-text">
+                <h3>Let's Work Together</h3>
+                <p>I'm currently looking for new opportunities and my inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            </div>
+            <div class="contact-grid">
+                <a href="mailto:valenciatbg78@gmail.com" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h4>Email</h4>
+                    <p>valenciatbg78@gmail.com</p>
+                </a>
+                <a href="tel:+6283197380864" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h4>Phone</h4>
+                    <p>+62 831 9738 0864</p>
+                </a>
+                <a href="https://www.linkedin.com/in/valencia-l-tobing-824a59337/" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h4>LinkedIn</h4>
+                    <p>Connect with me</p>
+                </a>
+                <a href="https://github.com/valenciiaa" target="_blank" class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h4>GitHub</h4>
+                    <p>View my code</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">Designed & Built by Valencia L Tobing</p>
+            <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Medan, North Sumatra, Indonesia</p>
+            <p class="footer-copyright">© 2024 All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
