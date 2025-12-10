@@ -1024,34 +1024,16 @@ section {
     color: var(--white);
 
 
-/* FOTO PROFIL JADI BULAT & CANTIK (tambahin ini doang) */
-.hero-image .image-frame {
-  width: 420px;
-  height: 420px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
+/* Tambahin ini di paling bawah style.css kamu */
+.hero-image .image-frame,
 .hero-image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 8px solid var(--black);
-  box-shadow: 0 0 80px rgba(0, 240, 255, 0.6);
-  );
-  transition: transform 0.5s ease;
+    border-radius: 50% !important;
+    overflow: hidden !important;
 }
-
-.hero-image img:hover {
-  transform: scale(1.08);
-}
-
-/* Biar tetap bagus di HP */
-@media (max-width: 1024px) {
-  .hero-image .image-frame {
-    width: 320px;
-    height: 320px;
-  }
+.hero-image img {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+    border: 8px solid #0a0a0a !important;
+    box-shadow: 0 0 80px rgba(0,240,255,0.6) !important;
 }
