@@ -159,18 +159,6 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Add cursor glow effect
-document.addEventListener('mousemove', (e) => {
-    const cursor = document.createElement('div');
-    cursor.className = 'cursor-glow';
-    cursor.style.left = e.pageX + 'px';
-    cursor.style.top = e.pageY + 'px';
-    
-    setTimeout(() => {
-        cursor.remove();
-    }, 500);
-});
-
 // Smooth reveal for contact cards
 const contactObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry, index) => {
@@ -190,7 +178,7 @@ document.querySelectorAll('.contact-card').forEach(card => {
     contactObserver.observe(card);
 });
 
-// Add typing effect to hero name (optional)
+// Add typing effect to hero name
 const heroName = document.querySelector('.hero-name');
 if (heroName) {
     const text = heroName.textContent;
@@ -208,6 +196,25 @@ if (heroName) {
     setTimeout(typeWriter, 500);
 }
 
+// Organization cards animation
+const orgObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+            setTimeout(() => {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateX(0)';
+            }, index * 100);
+        }
+    });
+}, { threshold: 0.2 });
+
+document.querySelectorAll('.org-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateX(-20px)';
+    card.style.transition = 'all 0.5s ease';
+    orgObserver.observe(card);
+});
+
 // Prevent scroll jank on mobile
 let ticking = false;
 window.addEventListener('scroll', () => {
@@ -218,3 +225,28 @@ window.addEventListener('scroll', () => {
         ticking = true;
     }
 });
+
+// Add smooth hover effect for buttons
+document.querySelectorAll('.btn').forEach(btn => {
+    btn.addEventListener('mouseenter', function() {
+        this.style.transition = 'all 0.3s ease';
+    });
+});
+
+// Education box animation
+const eduObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateX(0)';
+        }
+    });
+}, { threshold: 0.3 });
+
+const eduBox = document.querySelector('.education-box');
+if (eduBox) {
+    eduBox.style.opacity = '0';
+    eduBox.style.transform = 'translateX(-30px)';
+    eduBox.style.transition = 'all 0.6s ease';
+    eduObserver.observe(eduBox);
+}
