@@ -1022,3 +1022,27 @@ section {
 .contact-text h3 {
     font-size: 3rem;
     color: var(--white);
+
+
+    /* FOTO PROFIL BULAT & CANTIK (baru ditambahin) */
+.profile-circle {
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid var(--black);
+  box-shadow: 0 0 80px rgba(0, 240, 255, 0.5);
+  animation: glow 4s infinite alternate;
+}
+.profile-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.profile-circle:hover img {
+  transform: scale(1.08);
+}
+@media (max-width: 968px) {
+  .profile-circle { width: 320px; height: 320px; margin: 0 auto; }
+}
