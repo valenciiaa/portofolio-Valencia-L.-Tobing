@@ -1203,22 +1203,22 @@ section {
 
 /* Footer Section - NEW CARD DESIGN */
 .footer-section {
-    padding: 3rem 2rem 2rem;
-    margin-top: 5rem;
+    padding: 4rem 3rem 3rem;
+    margin-top: 6rem;
 }
 
 .footer-container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .footer-card-main {
     background: linear-gradient(135deg, var(--dark-gray) 0%, var(--medium-gray) 100%);
-    padding: 2rem;
-    border-radius: 20px;
-    border: 1px solid rgba(0, 240, 255, 0.2);
+    padding: 2.5rem;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 240, 255, 0.1);
     text-align: center;
-    box-shadow: 0 15px 40px rgba(0, 240, 255, 0.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -1237,8 +1237,8 @@ section {
 
 .footer-text-main {
     color: var(--white);
-    font-size: 1.1rem;
-    margin-bottom: 0.6rem;
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
     font-weight: 600;
     position: relative;
     z-index: 1;
@@ -1246,22 +1246,22 @@ section {
 
 .footer-location-main {
     color: var(--text-gray);
-    margin-bottom: 0.6rem;
-    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
     position: relative;
     z-index: 1;
 }
 
 .footer-location-main i {
     color: var(--cyan);
-    margin-right: 0.6rem;
+    margin-right: 0.8rem;
 }
 
 .footer-copyright-main {
     color: var(--text-gray);
-    font-size: 0.9rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    font-size: 0.95rem;
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     z-index: 1;
