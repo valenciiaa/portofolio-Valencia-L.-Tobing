@@ -1175,25 +1175,31 @@ section {
     .stat-item h3 { font-size: 3.5rem !important; }
     .education-box { flex-direction: column; text-align: center; padding: 2rem; }
 }
-/* CONTACT & FOOTER — PASTI BERUBAH, RAPI, EYE-CATCHING */
+
+/* CONTACT & FOOTER — FINAL, PASTI MUNCUL CANTIK */
+.contact-section {
+    padding: 10rem 2rem !important;
+}
+
 .contact-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .contact-card-main {
-    background: linear-gradient(135deg, rgba(26, 26, 26, 0.8), rgba(42, 42, 42, 0.8));
-    backdrop-filter: blur(20px);
-    border-radius: 40px;
-    padding: 5rem 4rem;
-    border: 1px solid rgba(0, 240, 255, 0.3);
-    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.8);
-    text-align: center;
+    background: rgba(26, 26, 26, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border-radius: 40px !important;
+    padding: 5rem 4rem !important;
+    border: 1px solid rgba(0, 240, 255, 0.4) !important;
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.8) !important;
+    text-align: center !important;
+    max-width: 1000px;
+    width: 100%;
     position: relative;
     overflow: hidden;
-    margin: 0 auto;
-    max-width: 1000px;
 }
 
 .contact-card-main::before {
@@ -1202,162 +1208,121 @@ section {
     top: -40%;
     left: 50%;
     transform: translateX(-50%);
-    width: 800px;
-    height: 800px;
-    background: radial-gradient(circle, rgba(0, 240, 255, 0.15) 0%, transparent 70%);
+    width: 900px;
+    height: 900px;
+    background: radial-gradient(circle, rgba(0,240,255,0.18) 0%, transparent 65%);
     border-radius: 50%;
     z-index: 0;
 }
 
-.contact-card-main > * {
-    position: relative;
-    z-index: 1;
-}
+.contact-card-main > * { position: relative; z-index: 2; }
 
 .contact-card-main h3 {
-    font-size: 3rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, var(--cyan), var(--purple));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 1.5rem;
+    font-size: 3.2rem !important;
+    font-weight: 900 !important;
+    background: linear-gradient(135deg, #00f0ff, #b24bf3) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    margin-bottom: 1.5rem !important;
 }
 
 .contact-desc {
-    font-size: 1.3rem;
-    color: var(--text-gray);
-    line-height: 1.9;
-    margin-bottom: 4rem;
-    max-width: 850px;
-    margin-left: auto;
-    margin-right: auto;
+    font-size: 1.35rem !important;
+    color: #ccc !important;
+    line-height: 2 !important;
+    max-width: 800px;
+    margin: 0 auto 4.5rem !important;
 }
 
 .contact-grid-rapi {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    gap: 2.5rem;
+    justify-content: center;
 }
 
 .contact-item-rapi {
-    display: flex;
-    align-items: center;
-    gap: 1.8rem;
-    padding: 2rem 2.5rem;
-    background: rgba(10, 10, 10, 0.7);
-    border-radius: 25px;
-    border: 2px solid rgba(0, 240, 255, 0.4);
-    text-decoration: none;
-    color: var(--white);
-    transition: all 0.4s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.contact-item-rapi::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 240, 255, 0.2), transparent);
-    transition: left 0.6s;
-}
-
-.contact-item-rapi:hover::before {
-    left: 100%;
+    display: flex !important;
+    align-items: center !important;
+    gap: 1.8rem !important;
+    padding: 2.2rem 2.5rem !important;
+    background: rgba(10, 10, 10, 0.8) !important;
+    border-radius: 28px !important;
+    border: 2px solid rgba(0, 240, 255, 0.5) !important;
+    text-decoration: none !important;
+    color: white !important;
+    transition: all 0.5s ease !important;
 }
 
 .contact-item-rapi:hover {
-    transform: translateY(-15px) scale(1.02);
-    border-color: var(--cyan);
-    box-shadow: 0 25px 60px rgba(0, 240, 255, 0.3);
+    transform: translateY(-18px) scale(1.05) !important;
+    border-color: #00f0ff !important;
+    box-shadow: 0 30px 80px rgba(0, 240, 255, 0.35) !important;
 }
 
 .contact-icon-rapi {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(135deg, var(--cyan), var(--cyan-dark));
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: var(--black);
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.contact-item-rapi:hover .contact-icon-rapi {
-    transform: rotateY(360deg) scale(1.1);
+    width: 75px !important;
+    height: 75px !important;
+    background: linear-gradient(135deg, #00f0ff, #00b8d4) !important;
+    border-radius: 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 2.2rem !important;
+    color: black !important;
 }
 
 .contact-info-rapi h4 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    color: var(--white);
+    font-size: 1.45rem !important;
+    margin-bottom: 0.5rem !important;
 }
 
 .contact-info-rapi p {
-    color: var(--text-gray);
-    font-size: 1.1rem;
+    color: #aaa !important;
+    font-size: 1.1rem !important;
 }
 
-/* FOOTER RAPI & EYE-CATCHING */
+/* FOOTER CANTIK */
 .footer-section {
-    background: var(--dark-gray);
-    padding: 4rem 0 2rem;
+    padding: 6rem 2rem 3rem !important;
+    background: #0a0a0a !important;
 }
 
 .footer-container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 2rem;
-}
-
-.footer-card-main {
-    background: rgba(26, 26, 26, 0.8);
-    backdrop-filter: blur(15px);
-    border-radius: 30px;
-    padding: 3rem 4rem;
-    border: 1px solid rgba(0, 240, 255, 0.2);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
     text-align: center;
 }
 
-.footer-text-main {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: var(--text-gray);
+.footer-card-main {
+    background: rgba(26, 26, 26, 0.95) !important;
+    backdrop-filter: blur(15px) !important;
+    border-radius: 32px !important;
+    padding: 3rem 4rem !important;
+    border: 1px solid rgba(0, 240, 255, 0.3) !important;
+    box-shadow: 0 25px 80px rgba(0, 0, 0, 0.7) !important;
 }
 
-.highlight {
-    color: var(--cyan);
-    font-weight: 700;
+.footer-text-main {
+    font-size: 1.6rem !important;
+    color: #ddd !important;
+    margin-bottom: 1rem !important;
+}
+
+.footer-text-main .highlight {
+    color: #00f0ff !important;
+    font-weight: 700 !important;
 }
 
 .footer-location-main {
-    font-size: 1.2rem;
-    color: var(--text-gray);
-    margin-bottom: 1rem;
+    font-size: 1.25rem !important;
+    color: #999 !important;
+    margin-bottom: 1rem !important;
 }
 
-.footer-location-main i {
-    color: var(--cyan);
-    margin-right: 0.5rem;
-}
+.footer-location-main i { color: #00f0ff !important; margin-right: 0.6rem; }
 
 .footer-copyright-main {
-    color: var(--cyan);
-    font-weight: 600;
-    font-size: 1rem;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .contact-card-main { padding: 3rem 2rem; }
-    .contact-grid-rapi { grid-template-columns: 1fr; gap: 1.5rem; }
-    .contact-item-rapi { flex-direction: column; text-align: center; }
-    .footer-card-main { padding: 2rem; }
+    color: #00f0ff !important;
+    font-weight: 600 !important;
 }
