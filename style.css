@@ -475,8 +475,8 @@ nav.scrolled {
 
 /* Sections */
 section {
-    padding: 8rem 3rem;
-    max-width: 1400px;
+    padding: 6rem 3rem;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
@@ -484,8 +484,8 @@ section {
 .section-header {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 5rem;
+    gap: 1.5rem;
+    margin-bottom: 3.5rem;
 }
 
 .section-number {
@@ -511,8 +511,8 @@ section {
 /* About Section - NEW CENTERED DESIGN */
 .about-section {
     background: linear-gradient(135deg, var(--dark-gray) 0%, var(--medium-gray) 100%);
-    border-radius: 40px;
-    padding: 7rem 5rem;
+    border-radius: 30px;
+    padding: 4rem 3rem;
     border: 1px solid rgba(0, 240, 255, 0.1);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -537,7 +537,7 @@ section {
 }
 
 .about-card {
-    max-width: 1100px;
+    max-width: 950px;
     margin: 0 auto;
 }
 
@@ -546,12 +546,12 @@ section {
 }
 
 .about-intro {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--white);
-    margin-bottom: 2rem;
-    line-height: 2;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
     font-weight: 400;
-    max-width: 950px;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -575,11 +575,11 @@ section {
 }
 
 .about-desc {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--text-gray);
-    margin-bottom: 4rem;
-    line-height: 2;
-    max-width: 900px;
+    margin-bottom: 3rem;
+    line-height: 1.8;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -587,16 +587,16 @@ section {
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    margin: 4rem auto;
-    max-width: 1000px;
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 850px;
 }
 
 .stat-item {
     text-align: center;
-    padding: 3.5rem 2rem;
+    padding: 2.5rem 1.5rem;
     background: rgba(0, 0, 0, 0.4);
-    border-radius: 25px;
+    border-radius: 20px;
     border: 2px solid transparent;
     position: relative;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -628,9 +628,9 @@ section {
 }
 
 .stat-item h3 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--cyan);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: 900;
     text-shadow: 0 0 30px var(--cyan-glow);
     line-height: 1;
@@ -638,19 +638,19 @@ section {
 
 .stat-item p {
     color: var(--text-gray);
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     font-weight: 500;
 }
 
 .education-box {
     display: flex;
-    gap: 2.5rem;
-    padding: 3.5rem 4rem;
+    gap: 2rem;
+    padding: 2.5rem 3rem;
     background: rgba(0, 0, 0, 0.4);
-    border-radius: 25px;
+    border-radius: 20px;
     border-left: 5px solid var(--cyan);
-    margin: 4rem auto 0;
-    max-width: 800px;
+    margin: 3rem auto 0;
+    max-width: 700px;
     transition: all 0.5s ease;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
     align-items: center;
@@ -663,23 +663,23 @@ section {
 }
 
 .edu-icon {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: var(--cyan);
     text-shadow: 0 0 30px var(--cyan-glow);
     flex-shrink: 0;
 }
 
 .edu-info h4 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--white);
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.5rem;
     font-weight: 700;
 }
 
 .edu-info p {
     color: var(--text-gray);
-    margin-bottom: 0.8rem;
-    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.05rem;
 }
 
 .edu-date {
@@ -691,13 +691,13 @@ section {
 /* Projects Section */
 .projects-grid {
     display: grid;
-    gap: 3.5rem;
+    gap: 2.5rem;
 }
 
 .project-card {
     background: linear-gradient(135deg, var(--dark-gray) 0%, var(--medium-gray) 100%);
-    border-radius: 30px;
-    padding: 4rem;
+    border-radius: 25px;
+    padding: 3rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
     position: relative;
     overflow: hidden;
@@ -744,9 +744,9 @@ section {
 
 .project-number {
     position: absolute;
-    top: 3rem;
-    right: 3rem;
-    font-size: 8rem;
+    top: 2rem;
+    right: 2rem;
+    font-size: 6rem;
     font-weight: 900;
     color: rgba(0, 240, 255, 0.03);
     line-height: 1;
@@ -760,16 +760,16 @@ section {
 
 .project-tags {
     display: flex;
-    gap: 1.2rem;
-    margin-bottom: 2rem;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .tag {
-    padding: 0.6rem 1.5rem;
+    padding: 0.5rem 1.2rem;
     background: rgba(0, 240, 255, 0.15);
     color: var(--cyan);
-    border-radius: 25px;
-    font-size: 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
     font-weight: 600;
     border: 1px solid rgba(0, 240, 255, 0.3);
     text-transform: uppercase;
@@ -777,32 +777,32 @@ section {
 }
 
 .project-title {
-    font-size: 2.2rem;
+    font-size: 1.9rem;
     color: var(--white);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-weight: 800;
     line-height: 1.3;
 }
 
 .project-description {
     color: var(--text-gray);
-    margin-bottom: 2rem;
-    line-height: 2;
-    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
 
 .project-highlights {
     list-style: none;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .project-highlights li {
     color: var(--text-gray);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
-    gap: 1.2rem;
-    font-size: 1.05rem;
+    gap: 1rem;
+    font-size: 1rem;
 }
 
 .project-highlights i {
@@ -813,17 +813,17 @@ section {
 
 .project-tech {
     display: flex;
-    gap: 1.2rem;
+    gap: 1rem;
     flex-wrap: wrap;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .project-tech span {
-    padding: 0.7rem 1.5rem;
+    padding: 0.6rem 1.3rem;
     background: rgba(0, 0, 0, 0.4);
     color: var(--white);
     border-radius: 10px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 600;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
@@ -847,15 +847,15 @@ section {
 /* Skills Section */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2.5rem;
-    margin-bottom: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-bottom: 5rem;
 }
 
 .skill-card {
     background: linear-gradient(135deg, var(--dark-gray) 0%, var(--medium-gray) 100%);
-    padding: 3rem;
-    border-radius: 25px;
+    padding: 2.5rem;
+    border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.4s ease;
     position: relative;
@@ -885,14 +885,14 @@ section {
 }
 
 .skill-icon {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background: rgba(0, 240, 255, 0.1);
-    border-radius: 20px;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     border: 2px solid rgba(0, 240, 255, 0.2);
     transition: all 0.3s ease;
 }
@@ -903,15 +903,15 @@ section {
 }
 
 .skill-icon i {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--cyan);
     text-shadow: 0 0 20px var(--cyan-glow);
 }
 
 .skill-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--white);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 700;
 }
 
@@ -922,11 +922,11 @@ section {
 }
 
 .skill-badge {
-    padding: 0.8rem 1.5rem;
+    padding: 0.7rem 1.3rem;
     background: rgba(0, 0, 0, 0.4);
     color: var(--white);
     border-radius: 10px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     font-weight: 500;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
@@ -941,27 +941,27 @@ section {
 
 /* Organizations */
 .organizations-section {
-    margin-top: 6rem;
+    margin-top: 5rem;
 }
 
 .org-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: var(--white);
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     font-weight: 800;
 }
 
 .org-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
 }
 
 .org-card {
     background: linear-gradient(135deg, var(--dark-gray) 0%, var(--medium-gray) 100%);
-    padding: 2.5rem;
-    border-radius: 20px;
+    padding: 2rem;
+    border-radius: 18px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.4s ease;
     position: relative;
@@ -1000,21 +1000,21 @@ section {
 
 .org-card h4 {
     color: var(--white);
-    font-size: 1.4rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
     font-weight: 700;
 }
 
 .org-card p {
     color: var(--text-gray);
-    font-size: 1.05rem;
+    font-size: 1rem;
 }
 
 /* Contact Section - NEW CARD DESIGN */
 .contact-section {
     background: linear-gradient(135deg, var(--dark-gray) 0%, var(--medium-gray) 100%);
-    border-radius: 40px;
-    padding: 7rem 5rem;
+    border-radius: 30px;
+    padding: 4rem 3rem;
     border: 1px solid rgba(0, 240, 255, 0.1);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
     position: relative;
@@ -1039,36 +1039,36 @@ section {
 }
 
 .contact-card-main {
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
     text-align: center;
 }
 
 .contact-card-main h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--white);
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 800;
 }
 
 .contact-desc {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--text-gray);
-    line-height: 2;
-    margin-bottom: 4rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
 }
 
 .contact-grid-rapi {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-    margin-top: 3rem;
+    gap: 2rem;
+    margin-top: 2.5rem;
 }
 
 .contact-item-rapi {
     background: rgba(0, 0, 0, 0.4);
-    padding: 2.5rem;
-    border-radius: 20px;
+    padding: 2rem;
+    border-radius: 18px;
     border: 2px solid rgba(255, 255, 255, 0.05);
     text-decoration: none;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -1076,7 +1076,7 @@ section {
     overflow: hidden;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     text-align: left;
 }
 
@@ -1105,10 +1105,10 @@ section {
 }
 
 .contact-icon-rapi {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background: rgba(0, 240, 255, 0.1);
-    border-radius: 15px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1126,7 +1126,7 @@ section {
 }
 
 .contact-icon-rapi i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--cyan);
     transition: all 0.4s ease;
 }
@@ -1142,14 +1142,14 @@ section {
 
 .contact-info-rapi h4 {
     color: var(--white);
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
     font-weight: 700;
 }
 
 .contact-info-rapi p {
     color: var(--text-gray);
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
 }
 
@@ -1200,19 +1200,19 @@ section {
 
 /* Footer Section - NEW CARD DESIGN */
 .footer-section {
-    padding: 5rem 3rem 3rem;
-    margin-top: 8rem;
+    padding: 4rem 3rem 3rem;
+    margin-top: 6rem;
 }
 
 .footer-container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .footer-card-main {
     background: linear-gradient(135deg, var(--dark-gray) 0%, var(--medium-gray) 100%);
-    padding: 3.5rem;
-    border-radius: 30px;
+    padding: 2.5rem;
+    border-radius: 25px;
     border: 1px solid rgba(0, 240, 255, 0.1);
     text-align: center;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
@@ -1234,8 +1234,8 @@ section {
 
 .footer-text-main {
     color: var(--white);
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    font-size: 1.15rem;
+    margin-bottom: 0.8rem;
     font-weight: 600;
     position: relative;
     z-index: 1;
@@ -1243,8 +1243,8 @@ section {
 
 .footer-location-main {
     color: var(--text-gray);
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
     position: relative;
     z-index: 1;
 }
@@ -1256,9 +1256,9 @@ section {
 
 .footer-copyright-main {
     color: var(--text-gray);
-    font-size: 1rem;
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
+    font-size: 0.95rem;
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     z-index: 1;
