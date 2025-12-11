@@ -1256,9 +1256,9 @@ section {
 
 .footer-copyright-main {
     color: var(--text-gray);
-    font-size: 0.95rem;
-    margin-top: 1.2rem;
-    padding-top: 1.2rem;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     position: relative;
     z-index: 1;
